@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100%;
+        }
+        header{
+            background:url(image1.jpg);
+            background-position: bottom;
+            background-size: 100% 50%;
+            background-repeat: no-repeat;
+            width:100%;
+            height: 100vh;
+        }
+        nav{
+            height: 70px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top:10px;
+        }
+        .mylogo {
+            font-size: 50px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        .menus a
+        {
+            text-decoration: none;
+            font:20px;
+            color:white;
+            padding:9px 18px;
+            margin:4px;
+            border-radius: 20px;
+            background-color: rgb(185, 26, 92);
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:20px;
+        }
+        .left,.right{
+            flex-basis: 50%;
+        }
+        .left h1{
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        .left{
+            max-width: 400px;
+            padding-left: 40px;
+        } 
+        .left p{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        button{
+            background-color: rgb(185, 26, 92);
+            color:white;
+            padding:9px;
+            outline: none;
+            border-radius: 20px;
+            border:none;
+        }
+        .right img{
+            width:100%;
+            height: 400px;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="mylogo">
+                MY PAGE
+            </div>
+            <div class="menus">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Enterprise</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="left">
+                <h1>WELCOME TO MY WEBSITE</h1>
+                <p>My name is satyam and I am 22 year old. I live in Chhattisgarh and I am Computer Science Student . I am in my 4th Year of my college and I am doing internship in web developement and design.
+                </p>
+                <button>Explore more</button>
+            </div>
+            <div class="right">
+                <img src="image2.jpg">
+            </div>
+        </div>
+    </header>
+</body>
+</html>
